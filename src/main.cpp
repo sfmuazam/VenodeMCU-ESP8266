@@ -14,8 +14,8 @@
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 MFRC522 mfrc522(SDA_PIN, RST_PIN);
 Servo myservo; // Inisialisasi objek Servo
-const char *ssid = "ARDHANI KOST";
-const char *password = "ardhani2813";
+const char *ssid = "YOUR_WIFI";
+const char *password = "*********";
 String content = "";
 
 void setup()
@@ -37,7 +37,7 @@ void setup()
     delay(1000);
     Serial.println("Connecting..");
   }
-  Serial.print("Use this URL to connect: ");
+  Serial.print("Connected to: ");
   Serial.print("http://");
   Serial.print(WiFi.localIP());
   Serial.println("");
